@@ -7,7 +7,7 @@ PORT = 8000
 
 def main():
     server = ThreadingHTTPServer((HOST, PORT), SimpleHTTPRequestHandler)
-    print(f"Serving Amoud Al-Azhar Institute at http://{HOST}:{PORT}")
+    print(f"Serving Amoud Al-Azher Institute at http://{HOST}:{PORT}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

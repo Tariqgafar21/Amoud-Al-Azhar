@@ -3,6 +3,14 @@ const courseSelect = document.querySelector("#course-select");
 const courseCards = document.querySelectorAll(".course-card[data-course]");
 const formStatus = document.querySelector("#form-status");
 const teacherEmail = "ahmadelbassal2@gmail.com";
+const inquiryMessage = document.querySelector("#inquiry-message");
+const messageCharacterCount = document.querySelector("#message-character-count");
+
+const updateMessageCharacterCount = () => {
+  messageCharacterCount.textContent = `${inquiryMessage.value.length} / ${inquiryMessage.maxLength}`;
+};
+
+inquiryMessage.addEventListener("input", updateMessageCharacterCount);
 
 const selectCourse = (courseName) => {
   courseSelect.value = courseName;
@@ -37,7 +45,7 @@ inquiryForm.addEventListener("submit", (event) => {
   const body = [
     "Assalamu alaykum,",
     "",
-    "I would like to ask about Amoud Al-Azhar Institute.",
+    "I would like to ask about Amoud Al-Azher Institute.",
     "",
     `Name: ${name}`,
     `Email: ${email}`,
