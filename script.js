@@ -45,7 +45,7 @@ inquiryForm.addEventListener("submit", (event) => {
   const body = [
     "Assalamu alaykum,",
     "",
-    "I would like to ask about Amoud Al-Azher Institute.",
+    "I would like to ask about Amoud Al-Azhar Institute.",
     "",
     `Name: ${name}`,
     `Email: ${email}`,
